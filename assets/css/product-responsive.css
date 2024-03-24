@@ -75,3 +75,24 @@ li span {
   display: flex;
   justify-content: space-between;
 }
+
+/* Media query */
+@media (min-width: 768px) {
+  .product-item {
+    flex-direction: row;
+  }
+  .product-item img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-item {
+    flex-direction: column;
+  }
+  .product-item img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
